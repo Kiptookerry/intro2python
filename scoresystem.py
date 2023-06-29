@@ -10,6 +10,3 @@ elif marks < 70:
     print("B")
 else:
     print("A")
-
-
-
