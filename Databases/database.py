@@ -7,7 +7,7 @@ connection = path.dirname(path.realpath(__file__))
 db = SqliteDatabase(path.join(connection,"emobilis.db"))
 
 #creating table inside db
-class User(Model):
+class student(Model):
     name = CharField()
     phone = CharField()
     age = CharField()
@@ -16,4 +16,4 @@ class User(Model):
 
     class Meta:
         database = db
-User.create_table(fail_silently=True)
+student.create_table(fail_silently=True)
